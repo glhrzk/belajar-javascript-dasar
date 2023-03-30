@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optional Chain</title>
+</head>
+<body>
+<script !src="">
+<!--  yaitu menggunakan tandan tanya dibelakang object, bertujuan untuk mengecek apakah object/properti yang di panggil ada atau tidak-->
+  const person = {
+    country : {
+      address: "Indonesia"
+    }
+  }
+  let country
+  country = person?.country?.address
+
+  document.writeln(`<p>SUKSES</p>`)
+  document.writeln(`<p> ${country} </p>`)
+  document.writeln(`<p>SUKSES</p>`)
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator</title>
+</head>
+<body>
+<script !src="">
+    // in operator bukan seperti isset di php, dia hanya mengecek apakah ada atau tidak
+    const person = {
+        firstName: "galih",
+        lastName: "rizki"
+    }
+
+    const result = person.firstName in person
+    if ("firstName" in person) {
+        alert(`Hello ${person.firstName}`)
+    } else {
+        alert('Hello')
+    }
+</script>
+
+</body>
+</html>

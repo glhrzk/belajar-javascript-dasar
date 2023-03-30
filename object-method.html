@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+<script !src="">
+    let person = {
+        name: "Galih",
+        sayHello: function (name) {
+            alert(`Hello ${name}`)
+        }
+    }
+    person.sayHello("Ujang")
+
+
+    // atau bisa juga seperti ini
+    function sayHi(name) {
+        alert(`Hello ${name}`)
+    }
+
+    const anotherPerson = {
+        name: "rizki",
+        sayHi: sayHi
+    }
+    anotherPerson.sayHi("Udin")
+
+
+    // menambahkan fungsi ke object yang sudah ada
+    const personTwo = {
+        name: "Orang ketiga"
+    }
+
+    personTwo.sayHi = function sayHi(name) {
+        alert(`Hello orangketiga ${name}`)
+    }
+
+    personTwo.sayHi("Cuakss")
+
+</script>
+</body>
+</html>

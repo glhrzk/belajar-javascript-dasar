@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Of</title>
+</head>
+<body>
+<script>
+
+    const names = ["galih", "rizki"]
+    for (const name of names) {
+        document.writeln(`<p> ${name} </p>`)
+    }
+
+    const name = "Galih rizkiansyah"
+    for (const n of name) {
+        document.writeln(`<p> ${n} </p>`)
+    }
+
+    //   tidak bisa di object
+    const person = {
+        firstName: "galih",
+        lastName: "rizki"
+    }
+    for (const p of person) {
+        document.writeln(`<p> ${p} </p>`)
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Generator</title>
+</head>
+<body>
+<script>
+
+    <!--  Generator akan mengembalikan nilai iterasi, tetapi tidak bisa diakses melalui index-->
+    function* createNames() {
+        yield "galih"
+        yield "rizki"
+    }
+
+    console.info(createNames())
+    let names = createNames()
+
+    for (const name of names) {
+        console.info(name)
+    }
+
+    //     contoh kasus
+    //     ini adalah lazy: artinya datanya diambil satu satu (mudahnya, data/yield diakses terlebih dahulu baru akan di eksekusi yield selanjutnya.)
+    function* buatGanjil(value) {
+        for (let i = 0; i < value; i++) {
+            if (i % 2 === 0) {
+                continue
+            }
+            yield i
+            console.info(`Yield ke-${i}`)
+        }
+    }
+
+    // ini adalah eager
+    function buatGanjilArray(value) {
+        let result = []
+        for (let i = 0; i < value; i++) {
+            if (i % 2 === 0) {
+                continue
+            }
+            result.push(i)
+            console.info(`eager ke-${i}`)
+        }
+        return result
+    }
+
+    let ganjil = buatGanjil(100)
+    // for (const number of ganjil) {
+    //     console.info(number)
+    // }
+
+
+    // akan di eksekusi satu satu, mungkin konsepnya seperti tipe data static di php
+    console.info(ganjil.next().value)
+    console.info(ganjil.next().value)
+    console.info(ganjil.next().value)
+    console.info(ganjil.next().value)
+</script>
+</body>
+</html>

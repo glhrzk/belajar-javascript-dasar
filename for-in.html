@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For In</title>
+</head>
+<body>
+<script !src="">
+
+    /*
+        for in digunakan untuk interasi property/index pada array/object
+     */
+
+    const Person = {
+        firstName: "Galih",
+        lastName: "Rizki"
+    }
+
+    for (const property in Person){
+        document.writeln(`<p>${property}: ${Person[property]}</p>`)
+    }
+
+    const names = ['Galih', 'rizki', 'ansyah'];
+    for (const index in names){
+        document.writeln(`<p>${index}: ${names[index]}</p>`)
+    }
+
+    /*
+        for of digunakan untuk interasi value pada array/object
+     */
+</script>
+</body>
+</html>

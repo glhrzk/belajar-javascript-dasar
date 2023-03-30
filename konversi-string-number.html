@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const value1 = 30
+    const value2 = "5"
+    const sum = value1 + parseInt(value2)
+    document.writeln(`<p> ${sum} </p>`)
+
+    document.writeln(`<p> ${parseInt("1.1")} </p>`)
+    document.writeln(`<p> ${parseFloat("1.1")} </p>`)
+    document.writeln(`<p> ${Number("1.1")} </p>`)
+
+    //   konversi string to number tidak valid akan menghasilkan NaN  (not a number)
+    document.writeln(`<p> ${Number("abc")} </p>`)
+    document.writeln(`<p> ${parseInt("1.1abc")} </p>`)
+    document.writeln(`<p> ${parseFloat("1.1text")} </p>`)
+
+    const first = Number("asd") // NaN
+    //     cek nan menggunakan isNan
+    document.writeln(`<p> ${isNaN(first)} </p>`)
+
+</script>
+
+</body>
+</html>

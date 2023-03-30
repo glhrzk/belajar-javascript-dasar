@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+        OR OPERATOR
+        membaca dari kiri ke kanan
+        mengambil nilai truthy yang pertama
+        menambil nilai falsy yang terakhir
+     */
+    console.info("Hello" || "")
+    console.info("" || {})
+    console.info("0" || "NOLL")
+    console.info(0 || "NOLL")
+    console.info(null || "NULL")
+    console.info(undefined || "UNDEFINED")
+    console.info(0 || false)
+
+    let person = {
+        name: {
+            first: "Galih",
+            last: "Rizki"
+        }
+    }
+
+    let name = person.name.first || person.name.last
+    console.info(name)
+
+    /*
+        AND OPERATOR
+        membaca dari kiri ke kanan
+        mengambil nilai truthy yang terakhir
+        menambil nilai falsy yang pertama
+     */
+
+    console.info("Hello" && "")
+    console.info("" && {})
+    console.info("0" && "NOLL")
+    console.info(0 && "NOLL")
+    console.info(null && "NULL")
+    console.info(undefined && "UNDEFINED")
+    console.info(0 && false)
+</script>
+</body>
+</html>

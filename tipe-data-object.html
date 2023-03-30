@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+
+<script>
+
+    <!--  tidak seperti di PHP yang bisa menggunakan assosiative array, di javascript tidak bisa, kita bisa menggunakan tipe data object untuk menggantinya-->
+
+    const person = {}
+
+    person["name"] = "Galih rizki";
+    person["age"] = 22
+    person["address"] = "Indonesia"
+    console.table(person)
+
+    const orang = {
+        nama: "Galih rizkiansyah",
+        alamat: "Rajeg",
+        usia: 22
+    }
+
+    console.table(orang)
+
+    // mengakses property object
+    console.info(`nama: ${orang.nama}`)
+    console.info(`alamat: ${orang.alamat}`)
+    console.info(`usia: ${orang.usia}`)
+</script>
+
+</body>
+</html>

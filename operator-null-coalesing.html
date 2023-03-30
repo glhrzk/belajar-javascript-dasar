@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coallescing</title>
+</head>
+<body>
+
+<script>
+  let name = 25
+
+  if (name === null || name === undefined){
+    document.writeln(`<p>nilai default dengan if</p>`)
+  }
+
+  let status = name ?? document.writeln('<p>nilai default dengan coalescing</p>')
+</script>
+
+</body>
+</html>

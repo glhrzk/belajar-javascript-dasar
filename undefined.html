@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Undefined</title>
+</head>
+<body>
+<script>
+    /*
+    Undefined adalah repsentasi dari type data
+    Jika sebuah variable tidak memiliki nilia, maka variable tersebut merupakan tipe undifined
+    */
+
+    let name = 'Daesuki';
+
+    if (name === undefined){
+        console.info('UNDEFINED')
+    } else {
+        console.info('DEFINED')
+    }
+
+    const names = ["galih", "rizki"];
+    if (names[2] === undefined){
+        console.info("Array UNDEFINED")
+    } else {
+        console.info('Array DEFINED')
+    }
+
+    const person = {}
+    person["name"] = ["Ujang"]
+    if (person.name === undefined){
+        console.info("Object UNDEFINED")
+    } else {
+        console.info('Object DEFINED')
+    }
+
+</script>
+</body>
+</html>

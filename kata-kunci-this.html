@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    console.log(this) // menhasilkan window
+
+    function sample() {
+        console.log(this)
+
+        function inner(){
+            console.log(this)
+        }
+
+        inner()
+    }
+
+    sample()
+
+    const person = {
+        name: "Galih",
+        sayHello: function (name){
+            console.log(`Hello ${name}, my name is ${this.name}`)
+        }
+    }
+
+    person.sayHello("Budi")
+    person.sayHello("Joko")
+</script>
+</body>
+</html>

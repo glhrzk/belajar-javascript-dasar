@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    function sayHello(firstName, lastName) {
+        return `Hello ${firstName} ${lastName}`
+    }
+
+    function isFound(array, searhValue) {
+        for (const element of array) {
+            if (element === searhValue) {
+                return true
+            }
+        }
+        return false
+    }
+
+    let galih = sayHello("galih", "rizki")
+    document.writeln(`<p>galih</p>`)
+
+    let find = isFound([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5);
+    document.writeln(find)
+
+</script>
+</body>
+</html>

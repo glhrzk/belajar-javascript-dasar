@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow</title>
+</head>
+<body>
+<script !src="">
+    <!--    arrow banyak kekurangan -->
+    /*
+        tidak memiliki fitur argument object
+        tidak bisa mengakses this pada object
+        tidak bisa mengakses super
+     */
+    const sayHello = (name) => {
+        console.info(`Hello ${name}`)
+    }
+    sayHello('Galih rizki')
+
+    //   arrow function sederhana
+    const sayHelloSederhana = (name) => console.info(name)
+    sayHello("lyly")
+
+    //  arrow function return value
+    /*
+    jika menggunakan block maka perlu melakukan return
+    jika tidak menggunakan block tidak perlu melakukan return
+     */
+
+    const sum = (first, second) => first + second;
+
+    console.info(sum(50, 10))
+
+    //  jika parameter di arrow function hanya satu, kita tidak wajib menggunakan kurung kurawal
+    const Hello = name => console.info(name)
+    Hello("Bujang")
+
+
+    //     arrow function di parameter function lain
+    function giveMeName(callback) {
+        callback("Galih rizki")
+    }
+
+    // anonymous function, biasanya menggunakan seperti ini
+    // giveMeName(function (name){
+    //     console.info(`Hello ${name}`)
+    // })
+
+    giveMeName((name) => console.info(`Hello ${name}`))
+
+</script>
+</body>
+</html>

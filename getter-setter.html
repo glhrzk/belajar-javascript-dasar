@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getter Setter</title>
+</head>
+<body>
+
+<script !src="">
+    const person = {
+        firstName: "Galih",
+        lastName: "Rizki",
+        get fullName() {
+            return `${this.firstName} ${this.lastName}`
+            //     diaksesnya seperti property, bukan function
+        }
+    }
+
+    console.info(person.fullName)
+</script>
+
+</body>
+</html>
