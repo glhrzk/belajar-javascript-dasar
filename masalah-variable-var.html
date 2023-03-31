@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VAR</title>
+</head>
+<body>
+<script !src="">
+    /*
+      var tidak memiliki block scope
+     */
+
+    let i = 20;
+    for (let i = 0; i < 10; i++) {
+        // tidak akan mengubah variabel di global scope
+        console.info(`Local let: ${i}`)
+    }
+    // nilai akan tetap 20
+    console.info(`Global let: ${i}`)
+
+    var j = 20;
+    for (var j = 0; j < 10; j++) {
+        // tidakan mengubah variabel di global scope
+        // atau mengoveride scope variabel global
+        console.info(`Local var: ${j}`)
+    }
+    // nilai akan menjadi 10
+    console.info(`Global var: ${j}`)
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function createFullName(firstName, middleName, lastName) {
+        return `${firstName} ${middleName}${lastName}`
+    }
+
+    const name = createFullName("galih", "rizki", "ansyah")
+    console.info(name)
+
+    function sum(...numbers) {
+        debugger
+        let total = 0
+        for (const number of numbers) {
+            total += number
+        }
+        return total
+    }
+
+    console.info(sum(1, 1, 1, 1, 1))
+
+</script>
+</body>
+</html>
